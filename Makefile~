@@ -1,0 +1,12 @@
+all:
+	make freqcounts
+
+matrixadd: freqcounts.o
+	g++ -o freqcounts freqcounts.o
+	
+freqcounts.o: freqcounts.cc
+	g++ -c freqcounts.cc
+	
+
+clean:
+	rm -f freqcounts.o
