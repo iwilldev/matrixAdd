@@ -1,7 +1,7 @@
 all:
 	make matrixadd
 
-charfreq: matrixadd.o
+matrixadd: matrixadd.o
 	g++ -o matrixadd matrixadd.o
 	
 matrixadd.o: matrixadd.cc
